@@ -1,0 +1,64 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	spacing: 0;
+	
+	purple: #6E11C0;
+	bg: #1C2023;
+	bg-alt: #0f0f0f;
+	fg: #ffffff;
+	fg-alt: #f0f0f0;
+
+	text-color: white;
+}
+
+window {
+	padding: 2px;
+	border-radius: 5px;
+	width: 800px;
+	background-image: linear-gradient(80deg, #f9b07a, #915caf);
+}
+
+mainbox{
+	children: [inputbar, listview];
+	border-radius: 5px;
+}
+
+inputbar {
+	children: [entry];
+	background-image: linear-gradient(80deg, #f9b07a, #915caf);
+	padding: 0 0 2 0;
+}
+
+entry {
+	padding: 10px;
+	background-color: #2A282F;
+}
+
+listview {
+	lines: 10;
+	scrollbar: true;
+	background-color: #2A282F;
+}
+
+scrollbar {
+	background-color: #2e2e38;
+	handle-color: #f9b07a;
+	margin: 0;
+}
+
+element {
+	children: [element-text];
+}
+
+element-text {
+	padding: 10px;
+	background-color: #2A282F;
+}
+
+element-text selected {
+	background-color: #2e2e38;
+	text-color: @fg;
+}
+
